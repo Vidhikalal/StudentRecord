@@ -24,6 +24,10 @@ public class Staff {
     protected Staff() {
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Person getMember() {
         return member;
     }

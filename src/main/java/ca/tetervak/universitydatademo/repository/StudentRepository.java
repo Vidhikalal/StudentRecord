@@ -2,6 +2,7 @@ package ca.tetervak.universitydatademo.repository;
 
 import ca.tetervak.universitydatademo.domain.Person;
 import ca.tetervak.universitydatademo.domain.Student;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
@@ -13,6 +14,8 @@ import java.util.List;
  */
 public interface StudentRepository extends CrudRepository<Student, Integer>{
     //Simple Query Methods
+    @Query("Select s from Student s")
+    List<Student>findAllStudent();
     List<Student> findByFullTime(boolean fullTime);
     List<Student> findByAge(Integer age);
     List<Student> findByAttendeeLastName(String last);

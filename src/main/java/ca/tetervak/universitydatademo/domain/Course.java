@@ -38,6 +38,10 @@ public class Course {
         this.department = department;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     protected Course() {
     }
 

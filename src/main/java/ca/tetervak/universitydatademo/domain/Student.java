@@ -38,6 +38,10 @@ public class Student {
     protected Student() {
     }
 
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
+
     public Integer getStudentId() {
         return studentId;
     }

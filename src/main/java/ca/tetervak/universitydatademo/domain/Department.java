@@ -34,6 +34,10 @@ public class Department {
     protected Department() {
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Integer getId() {
         return id;
     }
